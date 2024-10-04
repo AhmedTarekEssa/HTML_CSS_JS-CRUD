@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page one</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="container my-5">
+      <label for="productName">productName:</label>
+      <input type="text" class="form-control my-3" id="productName">
+      <label for="productPrice">productPrice:</label>
+      <input type="text" class="form-control my-3" id="productPrice">
+      <label for="productCat">productCat:</label>
+      <input type="text" class="form-control my-3" id="productCat">
+      <label for="productDesc">productDesc:</label>
+      <input type="text" class="form-control my-3" id="productDesc">
+      <button class="btn btn-info " id="mainBtn" >
+        add Product
+      </button>
+
+      <input type="text" placeholder="search" class="form-control my-5" oninput="search(this.value)">
+      <table class="mt-5 table">
+        <thead>
+          <tr><th>Index</th>
+          <th>productName</th>
+          <th>productPrice</th>
+          <th>productCat</th>
+          <th>productDesc</th>
+          <th>Delete</th>
+          <th>update</th>
+        </tr></thead>
+        <tbody id="tableRow"></tbody>
+      </table>
+    </div>
+
+    <script src="../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
